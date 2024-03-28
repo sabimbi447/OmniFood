@@ -1,9 +1,4 @@
-console.log("Hello Word!");
-const myName = "Jonas Asare";
 const h1 = document.querySelector(".heading-primary");
-console.log(myName);
-console.log(h1);
-
 // Set current year
 const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
