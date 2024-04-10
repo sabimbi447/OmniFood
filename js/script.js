@@ -1,8 +1,6 @@
+"use strict";
+
 const h1 = document.querySelector(".heading-primary");
-// Set current year
-const yearEl = document.querySelector(".year");
-const currentYear = new Date().getFullYear();
-yearEl.textContent = currentYear;
 
 ////////////////////////////////////
 // Make mobile navigation work
@@ -62,7 +60,7 @@ const obs = new IntersectionObserver(
     rootMargin: "-80px",
   }
 );
-obs.observer(sectionHeroEl);
+// obs.observer(sectionHeroEl);
 
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
@@ -78,7 +76,7 @@ function checkFlexGap() {
   document.body.appendChild(flex);
   var isSupported = flex.scrollHeight === 1;
   flex.parentNode.removeChild(flex);
-  console.log(isSupported);
+  // console.log(isSupported);
 
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
